@@ -1,5 +1,5 @@
 class Formatter {
-  
+
     static capitalize (string) {
      return string.charAt(0).toUpperCase() + string.slice(1);
     }
@@ -15,7 +15,7 @@ class Formatter {
         return this.capitalize(word)
         else if (index === 0)
         return this.capitalize(word)
-        else 
+        else
         return word;
       });
      return wordsCap.join(" ");
