@@ -1,5 +1,5 @@
 class Formatter {
-  
+
 
 static capitalize (string) {
  return string.charAt(0).toUpperCase() + string.slice(1);
@@ -12,7 +12,7 @@ static titleize (string) {
   let wordsCap = words.map (word => {
 if (word !=='the' && word !=='a' && word !=='an' &&word !=='but' && word !=='of' && word !=='and'&& word !=='for' && word !=='at' && word !=='by' && word !=='from')
 return this.capitalize(word)
-else 
+else
 return word;
 })
 return wordsCap.join(" ");
